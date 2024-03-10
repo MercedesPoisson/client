@@ -1,6 +1,4 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,13 +6,46 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {
+        middasgreen: "#15B287",
+        middasyellow: "#FDCD72",
+        middasgray: "#F6F6F6",
+        middasblue: "#2563EB",
+        notblack: "#13293D",
+        notwhite: "#E8F1F2",
+      }, 
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
+      }
     },
   },
   plugins: [],
 };
-export default config;
+
+
+// /** @type {import('tailwindcss').Config} */
+// module.exports = {
+//   mode: "jit",
+//   purge: [
+//     "./src/**/*.{js,ts,jsx,tsx}",
+//   ],
+//   content: [
+//   ],
+//   theme: {
+//     extend: {
+//       colors: {
+//         middasgreen: "#15B287",
+//         middasyellow: "#FDCD72",
+//         middasgray: "#F6F6F6",
+//         middasblue: "#2563EB",
+//         notblack: "#13293D",
+//         notwhite: "#E8F1F2",
+//       }, 
+//       fontFamily: {
+//         poppins: ['Poppins', 'sans-serif']
+//       }
+//     },
+//   },
+//   plugins: [],
+// };
+
